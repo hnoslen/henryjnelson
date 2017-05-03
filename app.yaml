@@ -4,24 +4,12 @@ api_version: 1
 threadsafe: true
 application: henry-nelson
 
-handlers:
-- url: /contact
-  script: henryjnelson.app
-  
+handlers:  
 - url: /img
   static_dir: img
-  
-- url: /ideas
-  script: forum.app
-  
-- url: /ideas/voteUp
-  script: forum.app
-  
-- url: /ideas/voteDown
-  script: forum.app
-  
-- url: /ideas/removeOne
-  script: forum.app
+
+- url: /res
+  static_dir: res
 
 - url: /
   script: henryjnelson.app
@@ -29,19 +17,10 @@ handlers:
 - url: /about
   script: henryjnelson.app
 
-- url: /mathcs
-  script: henryjnelson.app
-
-- url: /physics
-  script: henryjnelson.app
-
-- url: /philo
-  script: henryjnelson.app
-
 - url: /prof
   script: henryjnelson.app
 
-- url: /movies
+- url: /pubs
   script: henryjnelson.app
 
 libraries:
